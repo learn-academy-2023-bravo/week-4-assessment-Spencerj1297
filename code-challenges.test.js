@@ -36,17 +36,20 @@ describe("shuffleArray", () => {
 
 // b) Create the function that makes the test pass.
 //Puesdo C:
-// 
-
-
-
-
+// Create a function called shuffle array to match the test.
+// Give the funciton one parameter 'array' too match the data to bee arguments.
+//Start the function by designating a new variable called remove first that will take out the first item from the array. 
+// Store indside the variable the parameter array and use the .shift() method to remove the first item.
+// Next, create a for loop that will iterate through the array and set the the index to equal the array.length - 1. 
+// Next, set i > 0 and we want i to decrement so set i --
+// inside the for loop create a new variable that will hold the logic for the Fisher-Yates algorithm. 
+// This will give a random index within the remaining elements of the array, and then swap the curren element with the random one. 
+// Last return the array that has removed the first value and shuffled the rest. 
 
 const shuffleArray = (array) => {
   let removeFirst = array.shift()
   for (let i = array.length - 1; i > 0; i--) {
     let newArray = Math.floor(Math.random() * (i + 1))
-    // [array[i], array[newArray]] = [array[newArray], array[i]]
     let a = array[newArray]
     let b = array[i]
     array[i] = a
@@ -80,10 +83,10 @@ describe("totalVotes", () => {
 // b) Create the function that makes the test pass.
 //Puesdo C:
 //Create the functions named above(totalVotes).
-// Give the funciton one parameter called 'object' to max the data we are passing in.
+// Give the funciton one parameter called 'object' to match the data we are passing in.
 // To find the number of votes create a simple mathmatical formula of upvote - downvote. This will give the total.
 // Since the data is in an object we need to call on the key-value pair to retrieve the information.
-// This is down by dot notation.
+// This can be accomplied by dot notation.
 // Place the mathmatical formula in a variable called total, so we can just return the variable for cleanliness.
 // Breathe because your crushing it...
 
